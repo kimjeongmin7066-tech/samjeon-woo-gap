@@ -1,0 +1,16 @@
+{
+  "name": "삼성전자우 괴리율",
+  "short_name": "삼전우 괴리율",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f6fa",
+  "theme_color": "#111827",
+  "description": "삼성전자와 삼성전자우 괴리율 투자 보조 앱",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
