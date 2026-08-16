@@ -110,6 +110,10 @@ async function refreshLive(){
   render(history.concat([{date:new Date().toISOString().slice(0,10),common:ca,preferred:cb,spread:(ca-cb)/ca*100}]));
  }catch(e){render(history);}
 }
+window.addEventListener('pageshow', refreshLive);
+document.addEventListener('visibilitychange', ()=>{if(document.visibilityState==='visible') refreshLive();});
+
+render(history);renderTables();
 render(history);renderTables();
 if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 </script></body></html>
