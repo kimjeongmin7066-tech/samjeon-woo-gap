@@ -114,6 +114,6 @@ window.addEventListener('pageshow', refreshLive);
 document.addEventListener('visibilitychange', ()=>{if(document.visibilityState==='visible') refreshLive();});
 
 render(history);renderTables();
-render(history);renderTables();
+refreshLive();
 if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 </script></body></html>
